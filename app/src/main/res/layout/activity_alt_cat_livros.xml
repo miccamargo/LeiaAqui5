@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatLeitores">
+
+    <TextView
+        android:id="@+id/txtAltCatLivro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/txtAltCatLivro"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkCatLivro"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/checkCatLivro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIDCatLivro" />
+
+    <CheckBox
+        android:id="@+id/checkCatPeriodico"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="@string/checkCatPeriodico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkCatLivro" />
+
+    <CheckBox
+        android:id="@+id/checkCatRevista"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="@string/checkCatRevista"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkCatPeriodico" />
+
+    <CheckBox
+        android:id="@+id/checkCatJornal"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="@string/checkCatJornal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkCatRevista" />
+
+    <CheckBox
+        android:id="@+id/checkCatDidatica"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="@string/checkCatDidatica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkCatJornal" />
+
+    <CheckBox
+        android:id="@+id/checkCatRelatorio"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="@string/checkCatRelatorio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkCatDidatica" />
+
+    <CheckBox
+        android:id="@+id/checkCatTese"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="@string/checkCatTese"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkCatRelatorio" />
+
+    <CheckBox
+        android:id="@+id/checkCatMestrado"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="@string/checkCatMestrado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkCatTese" />
+
+    <EditText
+        android:id="@+id/txtDiasEmprestimoCatLivro"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/txtDiasEmprestimoCatLivro"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkCatMestrado" />
+
+    <Button
+        android:id="@+id/btnAlterarCatLivros"
+        android:layout_width="210dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:background="#2E9AFE"
+        android:text="@string/btnAlterarCatLivros"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTaxaMulta"
+        tools:text="Alterar" />
+
+    <EditText
+        android:id="@+id/txtIDCatLivro"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtIDCatLeitor"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAltCatLivro" />
+
+    <EditText
+        android:id="@+id/txtTaxaMulta"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtTaxaMulta"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDiasEmprestimoCatLivro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

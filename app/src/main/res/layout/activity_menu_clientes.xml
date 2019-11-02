@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuCatLivros">
+
+    <TextView
+        android:id="@+id/txtMenuClientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/txtMenuClientes"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCadCliente"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:background="#2E9AFE"
+        android:text="@string/btnCadCliente"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMenuClientes" />
+
+    <Button
+        android:id="@+id/btnAltCliente"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:background="#2E9AFE"
+        android:text="@string/btnAltCliente"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadCliente" />
+
+    <Button
+        android:id="@+id/btnExCliente"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:background="#2E9AFE"
+        android:text="@string/btnExCliente"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAltCliente" />
+</androidx.constraintlayout.widget.ConstraintLayout>

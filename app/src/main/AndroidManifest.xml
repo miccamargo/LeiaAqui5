@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.leiaaqui">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ConsultaDadosClientes"></activity>
+        <activity android:name=".ConsultaDadosCatLivros" />
+        <activity android:name=".ConsultaDadosCatLeitores" />
+        <activity android:name=".ExCatLeitores" />
+        <activity android:name=".AltCatLeitores" />
+        <activity android:name=".ExCatLivros" />
+        <activity android:name=".AltCatLivros" />
+        <activity android:name=".ExClientes" />
+        <activity android:name=".AltClientes" />
+        <activity android:name=".MenuLateral" />
+        <activity android:name=".Clientes" />
+        <activity android:name=".MenuClientes" />
+        <activity android:name=".MenuCatLeitores" />
+        <activity android:name=".MenuCatLivros" />
+        <activity android:name=".CatLivros" />
+        <activity android:name=".CatLeitores" />
+        <activity android:name=".CadastroFunc" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
